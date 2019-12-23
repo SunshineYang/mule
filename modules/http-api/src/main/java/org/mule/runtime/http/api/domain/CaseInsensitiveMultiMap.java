@@ -35,7 +35,7 @@ public class CaseInsensitiveMultiMap extends MultiMap<String, String> implements
 
   /**
    * Returns an empty case-insensitive-multi-map (immutable). This map is serializable.
-   *HttpListenerSuccessResponseBuilder
+   *
    * <p>
    * This example illustrates the type-safe way to obtain an empty map:
    *
@@ -110,9 +110,9 @@ public class CaseInsensitiveMultiMap extends MultiMap<String, String> implements
   @Override
   public DataType getDataType() {
     return DataType.builder()
-            .mapType(CaseInsensitiveMultiMap.class)
-            .keyType(String.class)
-            .valueType(String.class)
-            .build();
+        .mapType(CaseInsensitiveMultiMap.class)
+        .keyType(String.class)
+        .valueType(String.class)
+        .build();
   }
 }
